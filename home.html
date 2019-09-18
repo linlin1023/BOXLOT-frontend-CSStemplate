@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"><!--make h1 ele has margin top and bottom-->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources-2/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer|Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <title>BOXLOT-home</title>
+    </head>
+    <body ng-app="pinyougou" ng-controller = "itemController" ng-init = "findAll()">
+        <header>
+        <!--logo, navigation, main heading, buttons-->
+                <nav>
+                    <div class="row">
+                        <h1 class="logo">Boxlot</h1>
+                        <ul class="main-nav">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+        </header>
+
+        <section class="section-content">
+            <div class="row">
+                 <div class="col span-1-of-4 div-category">
+                    <ul class="ul-category">
+                        <li><a class="btn" href="#">Apparel Accessories</a></li>
+                        <li><a class="btn" href="#">As Seen On TV</a></li>
+                        <li><a class="btn" href="#">Automotive</a></li>
+                        <li><a class="btn" href="#">Baby Products</a></li>
+                        <li><a class="btn" href="#">Batteries and Lighters</a></li>
+                        <li><a class="btn" href="#">Cake Accessories</a></li>
+                        <li><a class="btn" href="#">Candles and Home Fragrance</a></li>
+                        <li><a class="btn" href="#">Cellphone Accessories</a></li>
+                        <li><a class="btn" href="#">Christmas Products</a></li>
+                        <li><a class="btn" href="#">Cleaning and Homecare</a></li>
+                        <li><a class="btn" href="#">Confectionery</a></li>
+                        <li><a class="btn" href="#">Craft and Sewing</a></li>
+                        <li><a class="btn" href="#">Electronics</a></li>
+                        <li><a class="btn" href="#">Gardening Products</a></li>
+                        <li><a class="btn" href="#">Glasses and Accessories</a></li>
+                        <li><a class="btn" href="#">Halloween Products</a></li>
+                        <li><a class="btn" href="#">Hardware</a></li>
+                        <li><a class="btn" href="#">Health and Beauty</a></li>
+                        <li><a class="btn" href="#">Jordana Makeup</a></li>
+                        <li><a class="btn" href="#">Kitchen and Homeware</a></li>
+                        <li><a class="btn" href="#">Party Supplies</a></li>
+                        <li><a class="btn" href="#">Pet Supplies</a></li>
+                        <li><a class="btn" href="#">Plasticware</a></li>
+                        <li><a class="btn" href="#">Shop Fittings</a></li>
+                        <li><a class="btn" href="#">Stationery</a></li>
+                        <li><a class="btn" href="#">Umbrella and Rain Gear</a></li>
+                    </ul>
+                </div>
+                <div class="col span-3-of-4 div-product">
+                    <div class="row">
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                        <div class="col span-1-of-4 box">
+                            <figure class="product-photo">
+                                <img src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" alt="image not found">
+                            </figure>
+                            
+                            <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3> 
+                            <i class="price">$1.90</i>
+                            <a href="#" class="btn cart-btn"><i class="icon ion-md-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+    </body>
+
+</html>
+<!--
+New Arrival
+Apparel Accessories
+As Seen On TV
+Automotive
+Automotive and Car Care
+Baby Products
+Batteries and Lighters
+Brand &amp; Licensed
+Cake Accessories
+Candles and Home Fragrance
+Cellphone Accessories
+Christmas Products
+Cleaning and Homecare
+Clearance n Discontinued
+Confectionery
+Craft and Sewing
+Electronics
+Gardening Products
+Glasses and Accessories
+Halloween Products
+Hardware
+Health and Beauty
+Jordana Makeup
+Kitchen and Homeware
+Other General Merchandise
+Party Supplies
+Pest Control
+Pet Supplies
+Plasticware
+Shop Fittings
+Shop Fittings and Display
+Souvenir &amp; Travel
+Stationery
+Tapes &amp; Packaging Products
+Toy Game &amp; Sport Gears
+Umbrella and Rain Gear
+
+
+-->

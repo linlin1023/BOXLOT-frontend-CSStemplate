@@ -1,0 +1,497 @@
+/* --------------------------------------------------------------------------  */
+/* BASIC SETUP */
+/* --------------------------------------------------------------------------  */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html { /*basic and default set of CSS*/
+    /*usually basic stuff here. like background color*/
+    background-color: #ffffff;
+    color: #fff;
+    font-family: 'Lato', 'Arial',sans-serif; /* sans-serif is a css key work*/
+    font-weight: 300;
+    font-size: 20px; /*html global font size*/
+    text-rendering: optimizeLegibility;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.69)), url(img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  /**100% of viewport*/
+}
+
+
+
+/* --------------------------------------------------------------------------  */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------------------------------------------  */
+
+/*-------TABLES----------*/
+table {
+    font-size: 80%;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table .tag {
+    text-transform: uppercase;
+}
+
+table, td, th {  
+  border: 0px solid #ddd;
+  text-align: center;
+}
+
+th, td {
+   padding: 10px;
+   height: 50px;
+}
+
+
+/*-------HEADINGS----------*/
+h1,h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/*-------PARAGRAPHS----------*/
+.p-copy {
+    font-size: 80%;
+    word-spacing: 2px;
+    line-height: 145%;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/*-------BUTTONS----------*/
+.btn:link,
+.btn:visited { /*button is inline bloack  */
+    display: inline-block; 
+    color: rgba(255, 255, 255, 0.76);
+    padding: 10px 10px;
+    font-weight: 300;
+    font-size: 80%;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s, color 0.2s; /*nice smooth transition from one state to another*/
+}
+
+/*<a> has 4 states in CSS: link(a normal state), visited, hover, active*/
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+    color: #fff;
+}
+.btn-icon:link,
+.btn-icon:visited {
+    display: inline-block; 
+    color: rgba(255, 255, 255, 0.76);
+    transition: color 0.5s;
+}
+.btn-icon:hover,
+.btn-icon:active {
+    color: #e67e22;
+}
+
+.btn-big:link,
+.btn-big:visited { /*button is inline bloack  */
+    display: inline-block; 
+    color: rgba(255, 255, 255, 0.76);
+    background-color: #cf6d17;
+    padding: 10px 10px;
+    margin: 0px 50px;
+    font-weight: 300;
+    font-size: 100%;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s, color 0.2s; /*nice smooth transition from one state to another*/
+}
+
+/*<a> has 4 states in CSS: link(a normal state), visited, hover, active*/
+.btn-big:hover,
+.btn-big:active {
+    background-color: #e6a133;
+    color: #fff;
+}
+
+
+/*-------IMAGES----------*/
+.row {
+    max-width: 1140px;
+    margin: 10px auto;
+}
+
+
+/*-------IMAGES----------*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*-------SECTIONS----------*/
+section {
+    padding: 10px 0;
+}
+
+/*-------ICONS----------*/
+.icon-small {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    /*color: #e67e22;*/
+    font-size: 150%;
+    margin-right: 0 10px;
+    /* secret to align text and icon*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+
+
+/* --------------------------------------------------------------------------  */
+/* HEADER */
+/* --------------------------------------------------------------------------  */
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #FFF;
+    font-family: 'Lacquer', sans-serif;
+    font-size: 320%
+}
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-right: 20px;
+}
+
+.main-nav li { 
+    display: inline-block; /*make them side by side, become inline*/
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+   border-bottom: 2px solid #e67e22;
+}
+
+
+/* --------------------------------------------------------------------------  */
+/* CONTENT */
+/* --------------------------------------------------------------------------  */
+
+/*-------CATEGORY----------*/
+.div-category {
+    font-weight: 400;
+    margin-left: 20px;
+    line-height: 135%;
+    float: left;
+}
+
+.ul-category {
+    display: inline-block;
+    list-style: none;
+}
+/*-------PRODUCT----------*/
+.box h3 {
+    font-weight: 300;
+    font-size: 70%;
+    margin: 5px auto;
+}
+
+.div-product .box {
+    padding: 10px;
+}
+
+.div-product .box .product-photo{
+    width: 100% ; /* 100% of its parent li*/
+    margin: 0px;
+    overflow: hidden;
+    background: #000;
+}
+
+
+.div-product .box img {
+    width: 100%; /* say the image is just as wide as its container <figure>*/
+    height: auto;
+    transform: scale(1.13);
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0.9;
+}
+
+.div-product .box img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.price {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.cart-btn {
+    cursor: pointer;
+    float: right;
+}
+
+/* --------------------------------------------------------------------------  */
+/* CART */
+/* --------------------------------------------------------------------------  */
+
+.col-cell {
+    text-align: center;
+}
+
+.item-img img {
+   width: 40%; 
+}
+
+
+.item-name p{
+    line-height: 145%;
+    width: 70%;
+    margin:20px auto;
+    font-size: 80%;
+}
+
+.item-num p {
+    margin: 30px auto;
+}
+
+.item-num-price {
+    margin: 50%, auto;
+}
+
+.item-num-price p {
+    margin: 30px auto;
+}
+.bottom-btn {
+    margin: 80px auto;
+}
+
+/* --------------------------------------------------------------------------  */
+/* CHECKOUT  */
+/* --------------------------------------------------------------------------  */
+
+.address-box{
+    margin: 0 auto;
+}
+
+.address-box .tag {
+    text-align: right;
+}
+.address-box input{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.81);   
+}
+
+.address-box input[type="password"]{
+    width: 80%;  
+}
+
+
+.order-summary-box {
+    width: 90%;
+}
+.order-summary-box div {
+    text-align: center;
+    font-size: 90%;
+    margin-top: 25px;
+}
+
+.order-summary-box .row:last-child{
+    border-top: 0.5px solid rgba(255, 255, 255, 0.61);
+}
+
+.method-box{
+    margin-top: 50px;
+    font-size:
+}
+.input-box {
+    font-size: 90%;
+    letter-spacing: 0.7px;
+    word-spacing: 5px;
+    margin:0px 100px;
+}
+.input-box input{
+    margin: 15px;
+}
+
+.input-box a:visited,
+.input-box a:link
+{
+    display: inline-block; 
+    padding: 5px;
+    text-decoration: none;
+    color: #e67e22;
+    cursor: pointer;
+    transition: background-color 0.2s,border 0.2s, color 0.2s;
+}
+
+.input-box a:hover,
+.input-box a:active
+{
+   background-color: #cf6d17;
+   color: #fff;
+}
+
+
+/* --------------------------------------------------------------------------  */
+/* CUSTOMER  */
+/* --------------------------------------------------------------------------  */
+.orders{
+  text-align: center;
+}
+.order-box {
+    margin: 40px auto;
+    width: 80%;
+    color: #fff;
+    
+        
+}
+.order-list {
+    font-size: 80%
+}
+
+.btn-order:visited,
+.btn-order:link
+{
+    display: inline-block; 
+    padding: 5px;
+    text-decoration: none;
+    color: #e67e22;
+    cursor: pointer;
+    transition: background-color 0.2s,border 0.2s, color 0.2s;
+}
+
+.btn-order:hover,
+.btn-order:active
+{
+   background-color: #cf6d17;
+   color: #fff;
+}
+
+/* --------------------------------------------------------------------------  */
+/* DETAIL  */
+/* --------------------------------------------------------------------------  */
+
+.bread-crumbs {
+    margin: 15px 0px 20px 20px;
+    font-size: 80%
+}
+
+.bread-crumbs span {
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.bread-crumbs a:link,
+.bread-crumbs a:visited
+{
+    margin: 0 10px;
+    padding: 5px 0px;
+    color: rgba(255, 255, 255, 0.79);
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1.6px solid transparent;
+    transition: border 0.5s, color 0.2s;
+}
+
+.bread-crumbs a:hover,
+.bread-crumbs a:active {
+    border-bottom: 1.6px solid #e67e22;
+    
+}
+
+
+.detail-img img{
+    display: block;
+    box-shadow: 8px 6px 3px rgbargba(76, 124, 124, 0.68);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.detail-description {
+    color : #fff;
+    font-size: 90%
+}
+
+.section-details h3 {
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.section-details p {
+    margin: 20px 0;
+    
+}
+
+.section-details p:last-child {
+    margin-top: 60px;
+}
+.rating {
+    color: rgba(250, 211, 64, 0.88);
+    font-size: 140%;
+}

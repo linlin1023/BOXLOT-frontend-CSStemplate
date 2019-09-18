@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"><!--make h1 ele has margin top and bottom-->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources-2/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer|Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <title>BOXLOT-detail</title>
+    </head>
+    <body ng-app="pinyougou" ng-controller = "itemController" ng-init = "findAll()">
+        <header>
+        <!--logo, navigation, main heading, buttons-->
+                <nav>
+                    <div class="row">
+                        <h1 class="logo">Boxlot</h1>
+                        <ul class="main-nav">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                
+        </header>
+
+
+        <section>
+            <h2>Product Detail</h2>
+            <div class="row">
+                <div class="bread-crumbs">
+                    <a href="#">Home</a><span>&gt;</span><a href="#">Hardware</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-details">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class= "detail-img">
+                        <img alt="product-image" src="http://boxlot-product-private.oss-ap-southeast-1.aliyuncs.com/8691_050147.jpg?Expires=1868012512&OSSAccessKeyId=LTAIOprLJ23TFyBI&Signature=gYpsKJGgveHwYSFmDORreZJDE9w%3D" >
+                    </div>
+                    
+                </div>
+                <div class="col span-1-of-2">
+                    <h3>Glitter Glue Stick 20cmx7.2mm x 12's</h3>
+                    <div class="detail-description">
+                         
+                        <p>NZD: <span>$2.44</span></p>
+                        <p>Brand: <span>Professional Choice</span></p>
+                        <p>Sizes: <span>20cmx7.2mm x 12's</span></p>
+                        <p class="rating">
+                            <i class="icon ion-md-star"></i>
+                            <i class="icon ion-md-star"></i>
+                            <i class="icon ion-md-star"></i>
+                            <i class="icon ion-md-star-half"></i>
+                            <i class="icon ion-md-star-outline"></i>
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-big">Add to cart</a> 
+                            <a href="#" class="btn-icon"><i class="icon ion-md-heart icon-small"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </section>
+    </body>
+</html>

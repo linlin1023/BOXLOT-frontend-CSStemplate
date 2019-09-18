@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"><!--make h1 ele has margin top and bottom-->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources-2/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer|Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <title>BOXLOT-checkout</title>
+    </head>
+    <body>
+        <header>
+        <!--logo, navigation, main heading, buttons-->
+                <nav>
+                    <div class="row">
+                        <h1 class="logo">Boxlot</h1>
+                        <ul class="main-nav">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+
+        <section class="section-checkout">
+            <div class="row">
+                <h2>shipping</h2>
+            </div>
+            <div class="row">
+               <p class="p-copy"> Orders will typically ship within 1 business day of purchase, pending availability and credit verification using your preferred shipping method.</p>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div >
+                        <h3>Shipping address</h3>
+                        <table class="address-box">
+                            <tr>
+                                <td class="tag">First Name :</td> <td><input type="text" name="First name" placeholder="First Name"></td>
+                            </tr>                           
+                            <tr>
+                                <td class="tag">Last Name :</td> <td><input type="text" name="Last name" placeholder="Last Name"></td>
+                            </tr>                            
+                            <tr>
+                                <td class="tag">Address :</td> <td><input type="text" name="Address" placeholder="Address"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">Region :</td> <td><input type="text" name="Region" placeholder="Region"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">City :</td> <td><input type="text" name="City" placeholder="City"></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">Postcode :</td> <td><input type="text" name="Postcode" placeholder="Postcode"></td>
+                            </tr>
+                        </table>
+                       
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class = "order-summary-box">
+                        <h3>Order summary</h3>
+                        <div class="row">
+                            <div class="col span-1-of-2"> Product Total</div>
+                            <div class="col span-1-of-2"> $45.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-2"> Shipping Fee</div>
+                            <div class="col span-1-of-2"> $10.00</div>
+                        </div>
+                        <div class = "row"> 
+                            <div class="col span-1-of-2"> Subtotal</div>
+                            <div class="col span-1-of-2"> $55.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="method-box">
+                    <h3>Shipping method</h3>
+                    <div class="input-box">
+                         <input type="radio" name="shippingMethod" value="stdShipping">$3.00 Standard shipping (8-10 days) trackable  <a href="#">price policy</a><br>
+                        <input type="radio" name="shippingMethod" value="expShipping" checked>$10.00 Express shipping (2-4 days) trackable  <a href="#">price policy</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+             <div class ="row bottom-btn">
+                <div class = "col span-1-of-2 col-cell"><a class="btn-big" href="#">Back to cart</a></div>
+                <div class = "col span-1-of-2 col-cell"><a class="btn-big" href="#">Next</a></div>
+            </div>
+        </section>
+    </body>

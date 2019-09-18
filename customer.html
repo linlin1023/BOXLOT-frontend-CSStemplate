@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"><!--make h1 ele has margin top and bottom-->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources-2/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lacquer|Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">
+        <title>BOXLOT-cutomer</title>
+    </head>
+    <body>
+        <header>
+        <!--logo, navigation, main heading, buttons-->
+                <nav>
+                    <div class="row">
+                        <h1 class="logo">Boxlot</h1>
+                        <ul class="main-nav">
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">My Details</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+        
+        <section class="my-details">
+            <h2>My Details</h2>
+            
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <h3>Basic information</h3>
+                    <table class="address-box">
+                            <tr>
+                                <td class="tag">First Name :</td> 
+                                <td><input type="text" name="firstName" value="Linlin"></td>
+                            </tr>                           
+                            <tr>
+                                <td class="tag">Last Name :</td> 
+                                <td><input type="text" name="lastName" value="Pan"></td>
+                            </tr>                            
+                            <tr>
+                                <td class="tag">Email Address :</td> 
+                                <td><input type="text" name="email" value="panlinlin1023@gmail.com"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><span>(Changing your email will change your login credentials too)</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">Mobile :</td> 
+                                <td><input type="text" name="phone" value="02102334343"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><span>If you wish to change your password:</span></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">Password :</td> 
+                                <td><input type="password" name="password" value="123456" >
+                                    <a href="#" class="btn-icon"><i class="icon ion-md-eye-off icon-small"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><a href="#" class="btn-big">submit</a></td>
+                            </tr>
+                    </table>
+                </div>
+                <div class="col span-1-of-2">
+                    <h3>Address</h3>
+                    <table class="address-box">
+                        <tr>
+                            <td class="tag">BUSINESS NAME :</td>
+                            <td><input type="text" name="businessName" value="1-2 dollars shop pakuranga"></td>
+                        </tr>
+                        <tr>
+                            <td class="tag">SUBURB :</td>
+                            <td><input type="text" name="suburb" value="Pakuranga"></td>
+                        </tr>
+                        <tr>
+                            <td class="tag">CITY :</td>
+                            <td><input type="text" name="city" value="Auckland"></td>
+                        </tr>
+                        <tr>
+                            <td class="tag">POSTCODE :</td>
+                            <td><input type="text" name="postcode" value="1050"></td>
+                        </tr>
+                        <tr>
+                            <td class="tag">COUNTRY :</td>
+                            <td><input type="text" name="country" value="New Zealand"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="row orders">
+                <div class="order-box">
+                <h3>My orders list</h3>
+                    <div class="order-list">
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="header-line">DATE</span></div>
+                    <div class="col span-1-of-6"> <span class="header-line">INVOICE NUMBER</span></div>
+                    <div class="col span-1-of-6"> <span class="header-line">TOTAL</span></div>
+                    <div class="col span-1-of-6"> <span class="header-line">STATUS</span></div>
+                    <div class="col span-1-of-6"> <span class="header-line">VIEW DETAILS</span></div>
+                    <div class="col span-1-of-6"> <span class="header-line">VIEW INVOICE</span></div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">31 July,2019</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">129055</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$42.95</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Picked</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">29 July,2019</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">128952</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$45.45</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Dispatched</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">17 July,2019</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">127952</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$63.95</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Dispatched</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">20 March,2019</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">118634</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$115.45</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Dispatched</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">04 December,2018</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">98776</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$217.45</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Dispatched</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                 <div class="row">
+                    <div class="col span-1-of-6"> <span class="order-date">18 September,2018</span></div>
+                    <div class="col span-1-of-6"> <span class="order-invoice-number">95525</span></div>
+                    <div class="col span-1-of-6"> <span class="order-total">$250.45</span></div>
+                    <div class="col span-1-of-6"> <span class="order-status">Dispatched</span></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-details btn-order">View Details</a></div>
+                    <div class="col span-1-of-6"> <a href="#" class="order-view-invoice btn-order">View Invoice</a></div>
+                </div>
+                        </div>
+              </div>
+            </div>
+        </section>
+        
+        
+        
+        
+    </body>
